@@ -3,7 +3,7 @@ import { API_URL } from "./constantes";
 
 export const config: NativeAuthServerConfig = {
     apiUrl: API_URL,
-    acceptedOrigins: ["https://mx-template-empty.vercel.app"],
+    acceptedOrigins: ["https://mx-template-empty.vercel.app", "https://mx-template-dapp.vercel.app"],
     maxExpirySeconds: 86400
   };
 
