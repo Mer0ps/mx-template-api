@@ -6,7 +6,9 @@ import { API_URL } from './constantes';
 
 const app: Application = express();
 const PORT: number = 3010;
+var cors = require('cors')
 
+app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
