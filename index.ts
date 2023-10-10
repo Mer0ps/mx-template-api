@@ -16,7 +16,6 @@ app.get('/account', authGuard, async (req: Request, res: Response) => {
   const tokenDecoded = await decodeToken(req.header('Authorization'));
 
   const response = await axios.get(`${API_URL}/accounts/${tokenDecoded.address}`);
-  console.log(response.data);
 
   res.json(response.data);
 });
@@ -25,3 +24,5 @@ app.get('/account', authGuard, async (req: Request, res: Response) => {
 app.listen(PORT, () => {
   console.log(`Serveur écoutant sur le port ${PORT}`);
 });
+
+module.exports = app;
