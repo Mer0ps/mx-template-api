@@ -1,1 +1,1 @@
-export const API_URL : string = "https://testnet-api.multiversx.com";
+export const API_URL : string = "https://devnet-api.multiversx.com";
